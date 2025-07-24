@@ -18,7 +18,8 @@ export default function HeroSection() {
     dots: false,
     speed: 1000,
     cssEase: "ease-in-out",
-    pauseOnFocus: true,
+    pauseOnFocus: false,
+    useCSS: true, 
   };
 
   const cards = [
@@ -27,18 +28,35 @@ export default function HeroSection() {
       high: "Unleash your creativity",
       desc: "and design epic worlds, create unique gameplay, and bring your community together.",
       price: "0.74",
+      url: "../..public/mcraft.png",
+    },
+    {
+      title: "FIVEM",
+      high: "Unleash your creativity",
+      desc: "and design epic worlds, create unique gameplay, and bring your community together.",
+      price: "1.74",
+      url: "../..public/mcraft.png",
     },
     {
       title: "Satisfactory",
       high: "Unleash your creativity",
       desc: "and design epic worlds, create unique gameplay, and bring your community together. ",
       price: "0.74",
+      url: "../..public/mcraft.png",
     },
     {
-      title: "FIVEM",
+      title: "Minecraft Bedrock",
       high: "Unleash your creativity",
       desc: "and design epic worlds, create unique gameplay, and bring your community together.",
       price: "0.74",
+      url: "../..public/mcraft.png",
+    },
+    {
+      title: "Factorio",
+      high: "Unleash your creativity",
+      desc: "and design epic worlds, create unique gameplay, and bring your community together.",
+      price: "0.74",
+      url: "../..public/mcraft.png",
     },
   ];
   return (
@@ -46,7 +64,7 @@ export default function HeroSection() {
       <div className={styles.container}>
         <div className={styles.container1}>
           <div className={styles.serverDiv}>
-            <img className={styles.server} src="/server.png" />
+            <img className={styles.server} src="/server.webp" />
           </div>
           <div className={styles.textContainer}>
             <div className={styles.hallow}></div>
@@ -80,17 +98,21 @@ export default function HeroSection() {
         </div>
 
         <div className={styles.container2}>
+          <div class="mask top-mask"></div>
+          <div class="mask bottom-mask"></div>
           <Slider className={styles.corousel} {...settings}>
             {cards.map((c, i) => (
-              <div key={i} className={styles.slide}>
+              <div key={i} className={`${styles.slide} ${styles[`slide${i}`]}`}>
                 <div className={styles.title}>{c.title}</div>
-                <div className={styles.gameDesc}><span className={styles.high}>{c.high}&nbsp;</span>{c.desc}</div>
+                <div className={styles.gameDesc}>
+                  <span className={styles.high}>{c.high}&nbsp;</span>
+                  {c.desc}
+                </div>
                 <div className={styles.price}>Starting at: {c.price}</div>
               </div>
             ))}
           </Slider>
         </div>
-        <div></div>
       </div>
     </div>
   );

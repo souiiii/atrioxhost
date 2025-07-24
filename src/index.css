@@ -47,3 +47,23 @@ html {
   scrollbar-color: #1ae4b85e #0e0e0e;
   scrollbar-width: thin;
 }
+
+
+.slick-slide {
+  width: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center;
+  align-items: end !important;
+  transition: all 1.4s ease;
+}
+
+.slick-current + .slick-slide{
+  transform: translateX(-5%) scale(1.05);
+  /* margin-block: 16px; */
+}
+
+.slick-track, .slick-list{
+  width: 100%;
+}
+

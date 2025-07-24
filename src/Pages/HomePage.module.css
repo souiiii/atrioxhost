@@ -2,6 +2,7 @@
   width: 100%;
   height: 100%;
   max-width: 1800px;
+  padding-inline: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -32,3 +33,10 @@
   top: -200px;
   left: 10%;
 } */
+
+
+@media  (max-width: 1622px) {
+    .parent{
+        padding-inline: 7rem;
+    }
+}
