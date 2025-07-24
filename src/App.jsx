@@ -1,5 +1,18 @@
-import styles from './App.module.css';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import HomePage from './Pages/HomePage';
+import './variables.css'
+import SvgBlurDefs from './Components/SvgBlurDefs';
 
 export default function App() {
-  return <div className={styles.parent}></div>;
+  
+  return (
+    <>
+      <SvgBlurDefs />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+        </Routes>
+      </BrowserRouter>
+    </>
+  );
 }

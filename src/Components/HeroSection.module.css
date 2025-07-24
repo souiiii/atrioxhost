@@ -1,0 +1,239 @@
+.parent {
+  width: 100%;
+  /* height: 900px; */
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 1000px;
+  /* z-index: 0; */
+}
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  max-width: 1500px;
+  gap: 2rem;
+}
+
+.container1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  height: 100%;
+  gap: 1.5rem;
+}
+
+.serverDiv {
+  width: 35%;
+  min-width: 240px;
+  z-index: 1;
+}
+
+.server {
+  width: 100%;
+  height: 100%;
+}
+
+.textContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: start;
+  flex-direction: column;
+  position: relative;
+  /* z-index: -1; */
+}
+
+.textContainer::after {
+  content: "";
+  z-index: 0;
+  position: absolute;
+  background: url("/clouds.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 140%;
+  height: 100%;
+  top: 0;
+  left: -30%;
+}
+
+.hallow {
+  position: absolute;
+  top: -20px;
+  left: -17%;
+  border-radius: 50%;
+  background: linear-gradient(
+    180deg,
+    rgba(157, 255, 201, 0.1) 0.04%,
+    rgba(255, 255, 255, 0) 73.51%
+  );
+  width: 625px;
+  height: 585px;
+}
+
+.atriox {
+  color: var(--text);
+  font-family: Staatliches;
+  font-size: 260px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 65%; /* 338.8px */
+  letter-spacing: 5.6px;
+}
+
+.hosting {
+  color: var(--text);
+  font-family: Staatliches;
+  font-size: 110px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 121%; /* 154.88px */
+  letter-spacing: 6.4px;
+  margin-bottom: 0.5rem;
+}
+
+.priceTag {
+  max-width: 550px;
+  padding: 0.25rem 1rem;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.35);
+  color: var(--text);
+  font-family: Poppins;
+  font-size: 18px;
+  margin-bottom: 1.5rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 108%; /* 23.76px */
+}
+
+.price {
+  font-weight: 600;
+}
+
+.desc {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: Poppins;
+  font-size: 20px;
+  max-width: 550px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 163%; /* 35.86px */
+  margin-bottom: 1.5rem;
+}
+
+.button {
+  cursor: pointer;
+  padding-inline: 2rem;
+  display: flex;
+  justify-content: center;
+  height: fit-content;
+  align-items: center;
+  height: 100%;
+}
+
+.duoButtons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 570px;
+  height: 50px;
+}
+
+.butt1 {
+  border-radius: 5px;
+  background: #00ce79;
+  color: #000;
+  text-align: center;
+  font-family: Staatliches;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%; /* 45px */
+  /* padding: 0 1rem; */
+}
+
+.butt2 {
+  border-radius: 5px;
+  border: 0.5px solid rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%; /* 24px */
+}
+
+.container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width: 40%; */
+  /* height: 540px; */
+}
+
+.corousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 180px;
+  width: 100%;
+  padding: 2rem 3rem;
+  border-radius: 28px;
+  border: 1px solid rgba(255, 255, 255, 0.37);
+  /* background: url(<path-to-image>) lightgray -2.002px 0px / 131.961% 129.538% no-repeat; */
+  box-shadow: 10px 14px 14.1px 0 rgba(0, 0, 0, 0.25);
+  margin-block: 16px;
+}
+
+.title {
+  color: var(--text);
+  font-family: Poppins;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 125%; /* 50px */
+  margin-bottom: 1.5rem;
+}
+
+.gameDesc {
+  color: var(--text);
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 140%; /* 22.4px */
+  letter-spacing: 0.16px;
+  margin-bottom: 1rem;
+}
+
+.high {
+  font-weight: 800;
+}
+
+.price {
+  color: var(--text);
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 108%;
+}
