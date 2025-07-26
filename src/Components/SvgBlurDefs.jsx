@@ -30,7 +30,7 @@ const svgRef = useRef(null);
     >
       <defs>
         <filter id="blur-heavy" x="-150%" y="-150%" width="400%" height="400%">
-          <feGaussianBlur in="SourceGraphic" stdDeviation="125" />
+          <feGaussianBlur in="SourceGraphic" stdDeviation="250" />
         </filter>
       </defs>
     </svg>

@@ -1,0 +1,15 @@
+.parent {
+  display: flex;
+  gap: 0.5rem;
+  border-radius: 17px;
+  background: #202020;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+}
+
+.star {
+  color: #fafafa;
+  font-size: 36px;
+}
+
+

@@ -1,21 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-
-
-*{
-  margin:0;
+* {
+  margin: 0;
   border: 0;
   box-sizing: border-box;
 }
 
-body, html{
+body,
+html {
   width: 100%;
   background-color: var(--bg);
   min-height: 100vh;
 }
 
-#root{
+body{
+  overflow-x: hidden;
+}
+
+#root {
   display: flex;
   width: 100%;
   height: 100%;
@@ -48,22 +51,126 @@ html {
   scrollbar-width: thin;
 }
 
-
 .slick-slide {
   width: 100% !important;
   display: flex !important;
   flex-direction: column !important;
   justify-content: center;
   align-items: end !important;
-  transition: all 1.4s ease;
+  transition: all 1.2s ease;
+  will-change: transform;
 }
+
+.slick-slide div div{
+  box-sizing: border-box;
+}
+
 
 .slick-current + .slick-slide{
-  transform: translateX(-5%) scale(1.05);
-  /* margin-block: 16px; */
+  transform: translateX(-5%);
+  filter: saturate(2) brightness(2);
+  border-color: transparent;
+
+}
+/* 
+.slick-tan {
+   animation: fullCycle 34.8s ease-in-out 15s infinite;
+  animation-fill-mode: forwards;
 }
 
-.slick-track, .slick-list{
+@keyframes fullCycle {
+  0% {
+    transform: translateX(0);
+    filter: saturate(1) brightness(1);
+  }
+
+  7.07% {
+    transform: translateX(-5%);
+    filter: saturate(2) brightness(2);
+  }
+
+  17.17% {
+    transform: translateX(-5%);
+    filter: saturate(2) brightness(2);
+  }
+
+  24.24% {
+    transform: translateX(0);
+    filter: saturate(1) brightness(1);
+  }
+} */
+
+
+.slick-slide div div {
+  transition: all 1.2s ease;
+}
+
+.slick-current + .slick-slide div div {
+  border-color: transparent;
+}
+
+.slick-track,
+.slick-list {
   width: 100%;
+
+ 
 }
 
+.slick-slide.slick-cloned {
+  /* animation: none !important; */
+  /* transform: none !important; */
+  /* filter: none !important; */
+}
+
+/* 
+@keyframes slideIn {
+  from { transform: translateX(0)}
+  to { transform: translateX(-5%)}
+}
+
+.slide.current + .slick-slide  {
+  animation: slideIn 0.5s ease-out forwards;
+}
+
+.slide.active {
+  opacity: 1;
+  transform: scale(1);
+  animation: slideIn 0.6s ease-out forwards;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+} */
+
+/* 
+.mask {
+  position: absolute;
+  right: 0;
+  width: 85%;
+  height: 60px; 
+  z-index: 5;
+  pointer-events: none;
+}
+
+.topMask {
+  top: 0;
+  background: linear-gradient(to bottom, rgba(15, 17, 19, 0.9) 0%, rgba(15, 17, 19, 0.5) 40%, rgba(15, 17, 19, 0) 100%);
+}
+
+.bottomMask {
+  bottom: 0;
+   background: linear-gradient(
+    to top,
+    rgba(22, 32, 30, 1) 0%,        
+    rgba(22, 32, 30, 0.7) 30%,
+    rgba(22, 32, 30, 0.3) 60%,
+    rgba(22, 32, 30, 0) 100%
+  );
+} */

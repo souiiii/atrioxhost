@@ -45,12 +45,13 @@
   align-items: start;
   flex-direction: column;
   position: relative;
+  z-index: 0;
   /* z-index: -1; */
 }
 
 .textContainer::after {
   content: "";
-  z-index: 0;
+  z-index: -1;
   position: absolute;
   background: url("/clouds.png");
   background-position: center;
@@ -74,6 +75,7 @@
   );
   width: 625px;
   height: 585px;
+  z-index: -2;
 }
 
 .atriox {
@@ -143,6 +145,7 @@
   width: 100%;
   max-width: 570px;
   height: 50px;
+  z-index: 999;
 }
 
 .butt1 {
@@ -179,6 +182,9 @@
   width: 100%;
   flex: 1 1 180px;
   height: 800px;
+  /* transform: rotate(3deg);  */
+  /* overflow: hidden; */
+
 }
 
 
@@ -188,6 +194,7 @@
   align-items: center;
   width: 100%;
   height: 100%;
+  
 }
 
 .slide {
@@ -201,46 +208,60 @@
   padding-block: 2.5rem;
   padding-inline: 2rem;
   border-radius: 28px;
-  border: 1px solid rgba(255, 255, 255, 0.37);
-  box-shadow: 10px 14px 14.1px 0 rgba(0, 0, 0, 0.25);
-  margin-block: 16px;
+  border: 2px solid rgba(133, 133, 133, 0.315);
+  margin-block: 10px;
   position: relative;
-}
-
-.slide0{
-  background: url('/mcraft.webp');
+  will-change: transform;
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.slide1{
-  background: url('/fivem.webp');
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
+:global(.slick-current) +:global(.slick-slide) .slide {
+  box-shadow: 10px 14px 14.1px 0 rgba(0, 0, 0, 0.25);
 }
 
-.slide2{
-  background: url('/satisfactory.webp');
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
+
+/* minecraft ▸ slides 0, 5, 10, … 45 */
+.slide0, .slide5, .slide10, .slide15, .slide20, .slide25,
+.slide30, .slide35, .slide40, .slide45 {
+  background-image: url("/mcraft.webp");
 }
 
-.slide3{
-  background: url('/mcraftb.webp');
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
+/* fivem ▸ 1, 6, 11, … 46 */
+.slide1, .slide6, .slide11, .slide16, .slide21, .slide26,
+.slide31, .slide36, .slide41, .slide46 {
+  background-image: url("/fivem.webp");
 }
 
-.slide4{
-  background: url('/factorio.webp');
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
+/* satisfactory ▸ 2, 7, 12, … 47 */
+.slide2, .slide7, .slide12, .slide17, .slide22, .slide27,
+.slide32, .slide37, .slide42, .slide47 {
+  background-image: url("/satisfactory.webp");
 }
+
+/* minecraft‑b ▸ 3, 8, 13, … 48 */
+.slide3, .slide8, .slide13, .slide18, .slide23, .slide28,
+.slide33, .slide38, .slide43, .slide48 {
+  background-image: url("/mcraftb.webp");
+}
+
+/* factorio ▸ 4, 9, 14, … 49 */
+.slide4, .slide9, .slide14, .slide19, .slide24, .slide29,
+.slide34, .slide39, .slide44, .slide49 {
+  background-image: url("/factorio.webp");
+}
+
+/* .activeSlide {
+  transform: translateX(-5%);
+  filter: saturate(2) brightness(2);
+  border-color: transparent;
+  transition: all 1.4s ease;
+}
+
+.activeSlide div div{
+  border-color: transparent;
+} */
 
 .title {
   color: var(--text);

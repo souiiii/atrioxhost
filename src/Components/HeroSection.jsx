@@ -5,60 +5,71 @@ import { faDiscord } from "@fortawesome/free-brands-svg-icons";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import { useEffect, useState } from "react";
 
 export default function HeroSection() {
   const settings = {
     vertical: true,
     slidesToShow: 3,
-    slidesToScroll: 1,
+    slidesToScroll: 1,  
     autoplay: true,
-    autoplaySpeed: 3000, 
+    autoplaySpeed: 4000,
     infinite: true,
     arrows: false,
     dots: false,
     speed: 1000,
-    cssEase: "ease-in-out",
+    cssEase: "linear",
     pauseOnFocus: false,
-    useCSS: true, 
+    useCSS: true,
+    useTransform: true,
+    swipeToSlide: false,
+    waitForAnimate: false,
   };
+  // const [key, setKey] = useState(0);
 
-  const cards = [
+  const baseCards = [
     {
       title: "Minecraft Java",
       high: "Unleash your creativity",
       desc: "and design epic worlds, create unique gameplay, and bring your community together.",
       price: "0.74",
-      url: "../..public/mcraft.png",
     },
     {
       title: "FIVEM",
       high: "Unleash your creativity",
       desc: "and design epic worlds, create unique gameplay, and bring your community together.",
       price: "1.74",
-      url: "../..public/mcraft.png",
     },
     {
       title: "Satisfactory",
       high: "Unleash your creativity",
       desc: "and design epic worlds, create unique gameplay, and bring your community together. ",
       price: "0.74",
-      url: "../..public/mcraft.png",
     },
     {
       title: "Minecraft Bedrock",
       high: "Unleash your creativity",
       desc: "and design epic worlds, create unique gameplay, and bring your community together.",
       price: "0.74",
-      url: "../..public/mcraft.png",
     },
     {
       title: "Factorio",
       high: "Unleash your creativity",
       desc: "and design epic worlds, create unique gameplay, and bring your community together.",
       price: "0.74",
-      url: "../..public/mcraft.png",
     },
   ];
+// const cards = Array(100).fill(c).flat();
+
+
+  // useEffect(function(){
+  //   setTimeout(()=>setKey(k=>k+1), 15000);
+  // },[key])
+const TOTAL_SLIDES = 50;  
+ 
+
+ 
+
   return (
     <div className={styles.parent}>
       <div className={styles.container}>
@@ -98,19 +109,25 @@ export default function HeroSection() {
         </div>
 
         <div className={styles.container2}>
-          <div class="mask top-mask"></div>
-          <div class="mask bottom-mask"></div>
+          <div className="mask topMask"></div>
+          <div className="mask bottomMask"></div>
           <Slider className={styles.corousel} {...settings}>
-            {cards.map((c, i) => (
-              <div key={i} className={`${styles.slide} ${styles[`slide${i}`]}`}>
-                <div className={styles.title}>{c.title}</div>
-                <div className={styles.gameDesc}>
-                  <span className={styles.high}>{c.high}&nbsp;</span>
-                  {c.desc}
+            {Array.from({ length: TOTAL_SLIDES }).map((_, i) => {
+              const c = baseCards[i % baseCards.length]; // safe: no shared mutations
+              return (
+                <div
+                  key={i}
+                  className={`${styles.slide} ${styles[`slide${i}`]}`} // keep your CSS hook
+                >
+                  <div className={styles.title}>{c.title}</div>
+                  <div className={styles.gameDesc}>
+                    <span className={styles.high}>{c.high}&nbsp;</span>
+                    {c.desc}
+                  </div>
+                  <div className={styles.price}>Starting at: {c.price}</div>
                 </div>
-                <div className={styles.price}>Starting at: {c.price}</div>
-              </div>
-            ))}
+              );
+            })}
           </Slider>
         </div>
       </div>
