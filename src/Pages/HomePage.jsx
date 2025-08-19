@@ -4,6 +4,9 @@ import FeatureSection from '../Components/FeatureSection';
 import ServerSection from '../Components/ServerSection';
 import TestimonialSection from '../Components/TestimonialSection';
 import LazyBlurShape from '../Components/LazyBlurShape';
+import PlansSection from '../Components/PlansSection';
+import PingSection from '../Components/PingSection';
+import FaqSection from '../Components/FaqSection';
 
 export default function HomePage() {
   return (
@@ -52,6 +55,9 @@ export default function HomePage() {
       <FeatureSection />
       <ServerSection/>
       <TestimonialSection/>
+      <PlansSection/>
+      <PingSection/>
+      <FaqSection/>
     </div>
   );
 }

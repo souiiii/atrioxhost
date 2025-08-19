@@ -1,0 +1,60 @@
+.mapDiv {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+}
+
+.container {
+  display: flex;
+  width: 60%;
+  height: 450px;
+  border-radius: 40px;
+  border: 3px solid rgba(89, 255, 187, 0.58);
+}
+
+.mapTextDiv {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: start;
+  justify-content: center;
+}
+
+.icon{
+    color: #00ff96;
+    font-size: 56px;
+    margin-bottom: 1.5rem;
+}
+
+.heading {
+  color: #00ff96;
+  font-family: Poppins;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 163%; /* 52.16px */
+  letter-spacing: 0.32px;
+  margin-bottom: 1rem;
+}
+
+.desc {
+  color: var(--text);
+  font-family: Poppins;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 163%;
+  letter-spacing: 0.32px;
+}
+
+.skylink{
+    font-weight: 700;
+}
+
+.container :global(.mapboxgl-ctrl-logo),
+.container :global(.mapbox-improve-map),
+.container :global(.mapboxgl-ctrl-attrib) {
+  display: none !important;
+}

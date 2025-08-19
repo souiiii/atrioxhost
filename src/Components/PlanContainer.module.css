@@ -1,0 +1,84 @@
+.parent {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border-radius: 20px;
+  border: 3px solid rgba(132, 255, 204, 0.6);
+  background: #181818;
+  background-image: url('/planbg.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0 -7px 85.5px 28px rgba(0, 206, 121, 0.05);
+}
+
+.down{
+    transform: translateY(10%);
+    border: none;
+    box-shadow: none;
+}
+
+.planName {
+  color: #00ff96;
+  text-align: center;
+  font-family: Staatliches;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%; /* 120px */
+  margin-bottom: 1rem;
+}
+
+.price {
+  border-radius: 5px;
+  background: rgba(0, 206, 121, 0.04);
+  width: 100%;
+  color: var(--text);
+  font-family: Poppins;
+  font-size: 56px;
+  font-style: normal;
+  /* line-height: 210%; */
+  font-weight: 800;
+  letter-spacing: 0.64px;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.specList {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-bottom: 3rem;
+}
+
+.specs {
+  color: var(--text);
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 210%; /* 42px */
+  letter-spacing: 0.2px;
+}
+
+.icons{
+    font-size: 18px;
+    color: #00ff96;
+}
+
+.tagLine {
+  color: var(--text);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 24px;
+  width: 90%;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 148%; /* 41.44px */
+  letter-spacing: 0.28px;
+}

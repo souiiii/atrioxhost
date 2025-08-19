@@ -32,7 +32,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  flex: 1 1 800px;
+  flex: 1 1 700px;
   border-radius: 20px;
   background: #181818;
   padding: 2.5rem;
@@ -111,7 +111,7 @@
 .feedDiv {
   color: #cacaca;
   display: flex;
-  width: 100%;
+  flex: 1 1 300px;
   justify-content: center;
   align-items: center;
 }

@@ -39,6 +39,7 @@ export default function Heading({
   return (
     <div className={styles.parent} ref={heading}>
       {children}
+     
     </div>
   );
 }

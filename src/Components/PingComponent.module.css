@@ -1,0 +1,136 @@
+.parent {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+}
+
+.textDiv {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+
+.heading {
+  color: #00ff96;
+  font-family: Poppins;
+  font-size: 76px;
+  font-style: italic;
+  font-weight: 900;
+  line-height: 99%; /* 99px */
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+.desc {
+  color: var(--text);
+  font-family: Poppins;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 163%;
+  letter-spacing: 0.32px;
+}
+
+.skylink {
+  color: #00ff96;
+}
+
+.pingDiv {
+  display: flex;
+  width: 60%;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  flex-direction: column;
+  border-radius: 40px;
+  border: 10px solid #202f29;
+  background: url("/pingbg.png") no-repeat;
+}
+
+.heading2 {
+  color: #00ff96;
+  font-family: Poppins;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 177%; /* 84.96px */
+  letter-spacing: 0.48px;
+  margin-bottom: 1.5rem;
+}
+
+.pingMeterDiv {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.pingMeter {
+  width: 100%;
+  border: 4px solid #02b06b;
+  background: #222;
+  height: 60px;
+}
+
+.pingMeterProgress {
+  height: 100%;
+  width: 70%;
+  background-color: #02b06b;
+}
+
+.pingMeterLabels {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.pings {
+  color: var(--text);
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 163%; /* 32.6px */
+  letter-spacing: 0.2px;
+}
+
+.butt {
+  border-radius: 9px;
+  background: #242424;
+  color: var(--text);
+  padding: 0.5rem 2rem;
+  font-family: Poppins;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 163%; /* 39.12px */
+  letter-spacing: 0.24px;
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+}
+
+.pingResult {
+  color: #00ce79;
+  font-family: Staatliches;
+  font-size: 90px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 99%; /* 99px */
+  letter-spacing: 1px;
+}
+
+.ms {
+  line-height: 99%;
+  letter-spacing: 0.24px;
+  font-size: 20px;
+}

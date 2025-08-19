@@ -6,7 +6,11 @@
   font-weight: 400;
   line-height: 99%; /* 113.85px */
   letter-spacing: 1.15px;
-  background: linear-gradient(92deg, #fafafa 19.75%, rgba(255, 255, 255, 0.13) 106.5%);
+  background: linear-gradient(
+    92deg,
+    #fafafa 19.75%,
+    rgba(255, 255, 255, 0.13) 106.5%
+  );
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

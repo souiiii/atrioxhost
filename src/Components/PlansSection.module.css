@@ -1,0 +1,37 @@
+.parent {
+  width: 100%;
+  /* height: 900px; */
+  position: relative;
+  /* overflow: hidden; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* min-height: 1000px; */
+  /* z-index: 0; */
+  max-width: 1500px;
+  margin-block: 150px;
+}
+
+.desc {
+  color: var(--text);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  max-width: 1200px;
+  line-height: 146%; /* 46.72px */
+  letter-spacing: 0.32px;
+  margin-bottom: 5rem;
+}
+
+
+.plansGrid{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
