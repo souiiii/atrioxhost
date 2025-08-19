@@ -21,6 +21,7 @@
   flex-direction: column;
   border-radius: 20px;
   background: #202020;
-
   margin-top: 5rem;
+  z-index: 2;
+  overflow: hidden;
 }

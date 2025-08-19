@@ -1,20 +1,52 @@
 .parent {
   width: 100%;
+  z-index: 0;
 }
 
 .question {
   color: var(--text);
   font-family: Poppins;
+  background-color: #202020;
   font-size: 24px;
+  border-radius: 20px;
   font-style: normal;
   font-weight: 800;
   line-height: 162%; /* 45.36px */
   letter-spacing: 0.28px;
   padding: 1.5rem 2rem;
   cursor: pointer;
+  z-index: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
+.quesSubDiv{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+
+.arrow{
+    transition: all 0.2s ease;
+    color: #00ce7871;
+    font-size: 18px;
+}
+
+.up{
+    transform: rotate(-180deg);
+    color: #00CE79
+}
+
+
 .answer {
+    z-index: -2;
+    width: 100%;
+    background-color: #181818;
+    overflow: hidden;
   color: #cacaca;
   font-family: Poppins;
   font-size: 18px;
@@ -23,5 +55,5 @@
   line-height: 174%; /* 34.8px */
   letter-spacing: 0.2px;
   padding: 2rem 2rem;
-  background-color: #181818;
 }
+
