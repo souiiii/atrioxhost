@@ -11,6 +11,8 @@
   /* z-index: 0; */
   max-width: 1500px;
   margin-block: 150px;
+  padding-inline: 2rem;
+
 }
 
 .testimonialCorousel{
@@ -23,8 +25,6 @@
     margin-top: 6rem;
 }
 
-
-
 .navButton {
   position: absolute;
   top: 40%;
@@ -32,26 +32,57 @@
   background: rgba(0, 0, 0, 0.103);
   color: white;
   border: none;
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
   cursor: pointer;
   font-size: 20px;
   z-index: 10;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrows{
+  font-size: 28px;
+  transition: all 0.2s ease;
+
 }
 
 .navButton:hover {
-  background: rgba(0, 0, 0, 0.8);
-  transform: translateY(-50%) scale(1.1);
+  background: #ffffffd0;
+  transform: translateY(-50%) scale(1.2);
+
+}
+
+.navButton:hover .arrows{
+  font-size: 36px;
+  color: #181818;
 }
 
 .prevButton {
   left: -70px;
 }
 
+.prevButton:hover {
+  left: -90px;
+}
+
+.prevButton:hover .arrows{
+  transform: translateX(-10%);
+}
+
 .nextButton {
   right: -70px;
+}
+
+.nextButton:hover {
+  right: -90px;
+}
+
+.nextButton:hover .arrows{
+  transform: translateX(10%);
 }
 
 /* Dots styling */

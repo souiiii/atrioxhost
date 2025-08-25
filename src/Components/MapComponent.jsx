@@ -4,13 +4,45 @@ import "mapbox-gl/dist/mapbox-gl.css";
 import styles from "./MapComponent.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationCrosshairs } from "@fortawesome/free-solid-svg-icons";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/all";
+
+gsap.registerPlugin(ScrollTrigger);
+
 
 mapboxgl.accessToken =
   "pk.eyJ1Ijoia3lheWFhcnNoYWhpZCIsImEiOiJjbWR4OTA4NWoyMmsxMmxzYjQxOGRvOHgwIn0.PQu8ua-XA0pXTwLvCTtLvA";
 
 const MapComponent = () => {
   const mapContainerRef = useRef(null);
+  const mp = useRef(null);
   const mapRef = useRef(null); // Store map instance
+
+  useEffect(() => {
+    // scope animations to this component (avoids double-invoke in React 18 dev)
+    const ctx = gsap.context(() => {
+      gsap.fromTo(
+        mp.current,
+        { x: 100, opacity: 0 }, // fromVars
+        {
+          x: 0,
+          opacity: 1,
+          duration: 0.3,
+          ease: "power1.inOut",
+          scrollTrigger: {
+            trigger: mp.current,
+            start: "top 80%",
+            end: "top 80%",
+            scrub: false,
+            markers: false,
+            toggleActions: "play none reverse none",
+          },
+        } // toVars (put ScrollTrigger here)
+      );
+    }, mp);
+
+    return () => ctx.revert(); // kill tween + ScrollTrigger on unmount
+  }, []);
 
   useEffect(() => {
     mapRef.current = new mapboxgl.Map({
@@ -52,7 +84,7 @@ const MapComponent = () => {
   }, []);
 
   return (
-    <div className={styles.mapDiv}>
+    <div ref={mp} className={styles.mapDiv}>
       <div ref={mapContainerRef} className={styles.container} />
       <div className={styles.mapTextDiv}>
         <FontAwesomeIcon

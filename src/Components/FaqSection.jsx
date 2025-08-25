@@ -1,7 +1,12 @@
-import Heading from './Heading.jsx'
-import styles from './FaqSection.module.css';
-import FAQ from './FAQ.jsx';
-import { useState } from 'react';
+import Heading from "./Heading.jsx";
+import styles from "./FaqSection.module.css";
+import FAQ from "./FAQ.jsx";
+import { useState } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/all";
+import { useEffect, useRef } from "react";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const faqs = [
   {
@@ -32,12 +37,52 @@ const faqs = [
 ];
 
 export default function FaqSection() {
-    const [display, setDisplay] = useState(0);
+  const [display, setDisplay] = useState(0);
 
-  return <div className={styles.parent}>
-    <Heading>FREQUENTLY ASKED QUESTIONS</Heading>
-    <div className={styles.faqs}>
-        {faqs.map((f,i)=><FAQ key={i} index={i} question={f.question}  setDisplay={setDisplay} display={display} answer={f.answer}/>)}
+  const faq = useRef(null);
+
+  useEffect(() => {
+    // scope animations to this component (avoids double-invoke in React 18 dev)
+    const ctx = gsap.context(() => {
+      gsap.fromTo(
+        [faq.current],
+        { y: 100, opacity: 0 }, // fromVars
+        {
+          y: 0,
+          opacity: 1,
+          duration: 0.4,
+          ease: "power1.inOut",
+          stagger: 0.2,
+          scrollTrigger: {
+            trigger: faq.current,
+            start: "top 80%",
+            end: "top 80%",
+            scrub: false,
+            markers: false,
+            toggleActions: "play none reverse none",
+          },
+        } // toVars (put ScrollTrigger here)
+      );
+    }, faq);
+
+    return () => ctx.revert(); // kill tween + ScrollTrigger on unmount
+  }, []);
+
+  return (
+    <div  className={styles.parent}>
+      <Heading>FREQUENTLY ASKED QUESTIONS</Heading>
+      <div ref={faq} className={styles.faqs}>
+        {faqs.map((f, i) => (
+          <FAQ
+            key={i}
+            index={i}
+            question={f.question}
+            setDisplay={setDisplay}
+            display={display}
+            answer={f.answer}
+          />
+        ))}
+      </div>
     </div>
-  </div>;
+  );
 }

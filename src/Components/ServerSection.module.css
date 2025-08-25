@@ -11,6 +11,8 @@
   /* z-index: 0; */
   max-width: 1500px;
   margin-block: 150px;
+  /* padding-inline: 2rem; */
+
 }
 
 .gameGrid {
@@ -23,4 +25,10 @@
   align-items: center;
   justify-content: center;
   margin-top: 2rem;
+}
+
+@media (max-width: 1600px) {
+    .parent{
+      padding-inline: 2rem;
+    }
 }

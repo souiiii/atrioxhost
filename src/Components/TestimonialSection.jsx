@@ -142,13 +142,13 @@ export default function TestimonialSection() {
           className={styles.navButton + " " + styles.prevButton}
           onClick={handlePrev}
         >
-          <FontAwesomeIcon icon={faArrowLeft} />
+          <FontAwesomeIcon icon={faArrowLeft} className={styles.arrows} />
         </button>
         <button
           className={styles.navButton + " " + styles.nextButton}
           onClick={handleNext}
         >
-          <FontAwesomeIcon icon={faArrowRight} />
+          <FontAwesomeIcon icon={faArrowRight} className={styles.arrows} />
         </button>
 
         {/* Dots */}

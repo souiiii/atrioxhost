@@ -7,6 +7,7 @@ import LazyBlurShape from '../Components/LazyBlurShape';
 import PlansSection from '../Components/PlansSection';
 import PingSection from '../Components/PingSection';
 import FaqSection from '../Components/FaqSection';
+import FooterSection from '../Components/FooterSection';
 
 export default function HomePage() {
   return (
@@ -29,7 +30,7 @@ export default function HomePage() {
       <LazyBlurShape
         width={900}
         height={925}
-        style={{ top: 1300, left: "-5%", position: "absolute", opacity: 0.08 }}
+        style={{ top: 1300, left: "-5%", position: "absolute", opacity: 0.06 }}
       />
       <LazyBlurShape
         width={1000}
@@ -39,17 +40,32 @@ export default function HomePage() {
       <LazyBlurShape
         width={1400}
         height={1425}
-        style={{ top: 1600, right: "-40%", position: "absolute", opacity: 0.08 }}
+        style={{ top: 1600, right: "-40%", position: "absolute", opacity: 0.06 }}
       />
       <LazyBlurShape
         width={1200}
         height={1625}
-        style={{ top: 3000, left:"-30%", position: "absolute", opacity: 0.1 }}
+        style={{ top: 3000, left:"-30%", position: "absolute", opacity: 0.06 }}
       />
       <LazyBlurShape
         width={1400}
         height={1425}
-        style={{ top: 4200, right:"-10%", position: "absolute", opacity: 0.08 }}
+        style={{ top: 4200, right:"-10%", position: "absolute", opacity: 0.06 }}
+      />
+      <LazyBlurShape
+        width={1600}
+        height={1625}
+        style={{ top: 5800, left:"-20%", position: "absolute", opacity: 0.04 }}
+      />
+      <LazyBlurShape
+        width={1400}
+        height={1425}
+        style={{ top: 6900, right:"-10%", position: "absolute", opacity: 0.04 }}
+      />
+      <LazyBlurShape
+        width={1500}
+        height={1550}
+        style={{ top: 7900, left:"-20%", position: "absolute", opacity: 0.04 }}
       />
       <HeroSection />
       <FeatureSection />
@@ -58,6 +74,7 @@ export default function HomePage() {
       <PlansSection/>
       <PingSection/>
       <FaqSection/>
+      <FooterSection/>
     </div>
   );
 }

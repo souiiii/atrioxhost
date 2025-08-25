@@ -1,10 +1,45 @@
 import styles from "./Testimonial.module.css";
 import Star from "./Star.jsx";
+import { useEffect, useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/all";
+
+gsap.registerPlugin(ScrollTrigger);
+
 export default function Testimonial({ t }) {
   const t1 = t[0];
   const t2 = t[1];
+
+  const test = useRef(null);
+
+  useEffect(() => {
+    // scope animations to this component (avoids double-invoke in React 18 dev)
+    const ctx = gsap.context(() => {
+      gsap.fromTo(
+        test.current,
+        { y: 100, opacity: 0 }, // fromVars
+        {
+          y: 0,
+          opacity: 1,
+          duration: 0.4,
+          ease: "power1.inOut",
+          scrollTrigger: {
+            trigger: test.current,
+            start: "top 80%",
+            end: "top 80%",
+            scrub: false,
+            markers: false,
+            toggleActions: "play none reverse none",
+          },
+        } // toVars (put ScrollTrigger here)
+      );
+    }, test);
+
+    return () => ctx.revert(); // kill tween + ScrollTrigger on unmount
+  }, []);
+
   return (
-    <div className={styles.parent}>
+    <div ref={test} className={styles.parent}>
       <div className={`${styles.test} ${styles.test1}`}>
         <div className={styles.testDiv}>
           <Star />

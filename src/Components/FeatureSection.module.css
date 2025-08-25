@@ -10,6 +10,7 @@
   /* z-index: 0; */
   max-width: 1500px;
   padding-block: 75px;
+  padding-inline: 2rem;
 }
 
 .textContainer {

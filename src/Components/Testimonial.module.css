@@ -106,6 +106,7 @@
   line-height: 162%;
   letter-spacing: 0.28px;
   color: #cacaca;
+  max-width: 400px;
 }
 
 .feedDiv {

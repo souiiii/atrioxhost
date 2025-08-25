@@ -14,7 +14,7 @@ export default function LazyBlurShape(props) {
         }
       },
       {
-        threshold: 0.1, // how much of it should be in view (10%)
+        threshold: 0.01, // how much of it should be in view (10%)
       }
     );
 

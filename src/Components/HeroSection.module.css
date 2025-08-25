@@ -9,6 +9,8 @@
   /* min-height: 1000px; */
   /* z-index: 0; */
   padding-block: 75px;
+  padding-inline: 2rem;
+
 }
 
 .container {

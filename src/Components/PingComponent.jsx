@@ -1,8 +1,42 @@
 import styles from './PingComponent.module.css';
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/all";
+import { useEffect, useRef } from 'react';
+
+gsap.registerPlugin(ScrollTrigger);
 
 export default function PingComponent() {
+
+    const p= useRef(null);
+
+    useEffect(() => {
+      // scope animations to this component (avoids double-invoke in React 18 dev)
+      const ctx = gsap.context(() => {
+        gsap.fromTo(
+          p.current,
+          { x: -100, opacity: 0 }, // fromVars
+          {
+            x: 0,
+            opacity: 1,
+            duration: 0.3,
+            ease: "power1.inOut",
+            scrollTrigger: {
+              trigger: p.current,
+              start: "top 80%",
+              end: "top 80%",
+              scrub: false,
+              markers: false,
+              toggleActions: "play none reverse none",
+            },
+          } // toVars (put ScrollTrigger here)
+        );
+      }, p);
+
+      return () => ctx.revert(); // kill tween + ScrollTrigger on unmount
+    }, []);
+
   return (
-    <div className={styles.parent}>
+    <div ref={p} className={styles.parent}>
       <div className={styles.textDiv}>
         <h1 className={styles.heading}>Unmatched Realibility</h1>
         <p className={styles.desc}>
