@@ -20,6 +20,7 @@
   align-items: center;
   width: 100%;
   max-width: 1500px;
+
 }
 
 .container1 {
@@ -144,10 +145,21 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  /* width: 100%; */
   max-width: 570px;
   height: 50px;
+  gap: 1.5rem;
   z-index: 999;
+}
+
+.bIcon1{
+   color: #000;
+   font-size: 32px;
+}
+
+.bIcon2{
+   color: #fafafa;
+   font-size: 28px;
 }
 
 .butt1 {
@@ -319,6 +331,11 @@
     min-width: 0px;
   }
 
+  .server{
+    mask-image: linear-gradient(to top, transparent, black 40%);
+  -webkit-mask-image: linear-gradient(to top, transparent, black 40%);
+  }
+
   .textContainer::after {
     width: 150%;
     top: -200px;
@@ -360,6 +377,112 @@
   }
   
   .butt2{
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1350px) {
+  .serverDiv{
+    display: none;
+  }
+  .container{
+    max-width: 1100px;
+    justify-content: center;
+  }
+  .parent{
+    padding-inline: 5rem;
+  }
+}
+
+@media (max-width: 1150px) {
+  
+ .atriox{
+  font-size: 160px;
+ }
+
+ .hosting{
+  font-size: 84px;
+ }
+
+ .priceTag{
+  font-size: 16px;
+ }
+
+ .desc{
+  font-size: 16px;
+ }
+
+ 
+
+ .butt1{
+  font-size: 22px;
+ }
+
+ .butt2{
+  font-size: 16px;
+ }
+
+ .bIcon1{
+  font-size: 24px;
+ }
+
+ .bIcon2{
+  font-size: 24px;
+ }
+
+ .container2{
+  display: none;
+ }
+
+ .serverDiv{
+  display: flex;
+ }
+
+}
+
+@media (max-width: 850px) {
+  .atriox{
+    font-size: 120px;
+  }
+
+  .hosting{
+    font-size: 64px;
+  }
+
+  .desc{
+    font-size: 16px;
+  }
+
+  .serverDiv{
+    display: none;
+  }
+
+  .parent{
+    padding-inline: 1rem;
+    margin-top: 4rem;
+  }
+
+  .duoButtons{
+    gap: 0.75rem;
+  }
+
+  .button{
+    padding-inline: 1rem;
+  }
+
+  .butt1{
+    font-size: 21px;
+  }
+
+  .bIcon1{
+    font-size: 20px;
+  }
+
+  .butt2{
+    font-size: 16px;
+  }
+  
+  .bIcon2{
     font-size: 20px;
   }
 }

@@ -75,7 +75,7 @@ const TOTAL_SLIDES = 50;
       <div className={styles.container}>
         <div className={styles.container1}>
           <div className={styles.serverDiv}>
-            <img className={styles.server} src="/server.webp" />
+            <img className={styles.server} src="/server-good.png" />
           </div>
           <div className={styles.textContainer}>
             <div className={styles.hallow}></div>
@@ -93,16 +93,16 @@ const TOTAL_SLIDES = 50;
               <button className={`${styles.button} ${styles.butt1}`}>
                 <FontAwesomeIcon
                   icon={faShoppingCart}
-                  style={{ color: "#000", fontSize: "32px" }}
+                  className={styles.bIcon1}
                 />
                 &nbsp; Order Now
               </button>
               <button className={`${styles.button} ${styles.butt2}`}>
                 <FontAwesomeIcon
                   icon={faDiscord}
-                  style={{ color: "fafafa", fontSize: "28px" }}
+                  className={styles.bIcon2}
                 />
-                &nbsp; Join our discord
+                &nbsp; Our Discord
               </button>
             </div>
           </div>
