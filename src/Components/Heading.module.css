@@ -16,3 +16,39 @@
   -webkit-text-fill-color: transparent;
   margin-bottom: 3rem;
 }
+
+
+@media  (max-width: 1622px) {
+  .parent{
+
+    font-size: 96px;
+  }
+}
+
+@media (max-width: 1350px) {
+ .parent{
+
+    font-size: 90px;
+  }
+}
+
+@media (max-width: 1150px) {
+.parent{
+
+    font-size: 80px;
+  }
+}
+
+@media (max-width: 850px) {
+ .parent{
+
+    font-size: 64px;
+  }
+}
+
+@media (max-width: 600px) {
+ .parent{
+
+    font-size: 48px;
+  }
+}

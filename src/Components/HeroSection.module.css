@@ -3,6 +3,7 @@
   /* height: 900px; */
   position: relative;
   overflow: hidden;
+  flex-direction: column;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -312,6 +313,11 @@
   line-height: 108%;
 }
 
+.dragonContainer{
+  display: none;
+}
+
+
 
 @media  (max-width: 1622px) {
 
@@ -395,6 +401,10 @@
 }
 
 @media (max-width: 1150px) {
+
+  .parent{
+    margin-bottom: 0px;
+  }
   
  .atriox{
   font-size: 160px;
@@ -438,9 +448,17 @@
   display: flex;
  }
 
+ .dragonContainer{
+  display: flex;
+  position: relative;
+  height: 600px;
+  
+ }
+
 }
 
 @media (max-width: 850px) {
+
   .atriox{
     font-size: 120px;
   }
@@ -484,5 +502,13 @@
   
   .bIcon2{
     font-size: 20px;
+  }
+
+  
+
+  .textContainer::after{
+    /* top: -45%; */
+    top: -25%;
+
   }
 }

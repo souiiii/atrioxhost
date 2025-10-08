@@ -11,7 +11,7 @@ export default function HeroSection() {
   const settings = {
     vertical: true,
     slidesToShow: 3,
-    slidesToScroll: 1,  
+    slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 4000,
     infinite: true,
@@ -59,16 +59,12 @@ export default function HeroSection() {
       price: "0.74",
     },
   ];
-// const cards = Array(100).fill(c).flat();
-
+  // const cards = Array(100).fill(c).flat();
 
   // useEffect(function(){
   //   setTimeout(()=>setKey(k=>k+1), 15000);
   // },[key])
-const TOTAL_SLIDES = 50;  
- 
-
- 
+  const TOTAL_SLIDES = 50;
 
   return (
     <div className={styles.parent}>
@@ -98,10 +94,7 @@ const TOTAL_SLIDES = 50;
                 &nbsp; Order Now
               </button>
               <button className={`${styles.button} ${styles.butt2}`}>
-                <FontAwesomeIcon
-                  icon={faDiscord}
-                  className={styles.bIcon2}
-                />
+                <FontAwesomeIcon icon={faDiscord} className={styles.bIcon2} />
                 &nbsp; Our Discord
               </button>
             </div>
@@ -130,6 +123,9 @@ const TOTAL_SLIDES = 50;
             })}
           </Slider>
         </div>
+      </div>
+      <div className={styles.dragonContainer}>
+        <img className={styles.dragon} src="/dragonm.png" alt="Dragon Image" />
       </div>
     </div>
   );
