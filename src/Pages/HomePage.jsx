@@ -231,10 +231,10 @@ export default function HomePage() {
       <FeatureSection />
       <ServerSection/>
       <TestimonialSection/>
-      <PlansSection/>
+      {/* <PlansSection/>
       <PingSection/>
       <FaqSection/>
-      <FooterSection/>
+      <FooterSection/> */}
     </div>
   );
 }

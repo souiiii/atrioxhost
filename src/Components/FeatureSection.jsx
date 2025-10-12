@@ -48,7 +48,7 @@ export default function FeatureSection() {
       {
         opacity: 1,
         filter: "blur(0px)",
-        duration: 0.35,
+        duration: 0.3,
         stagger: 0.04,
         y: 0,
         ease: "power1.inOut",

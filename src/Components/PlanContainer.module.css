@@ -8,17 +8,17 @@
   border-radius: 20px;
   border: 3px solid rgba(132, 255, 204, 0.6);
   background: #181818;
-  background-image: url('/planbg.svg');
+  background-image: url("/planbg.svg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   box-shadow: 0 -7px 85.5px 28px rgba(0, 206, 121, 0.05);
 }
 
-.down{
-    transform: translateY(10%);
-    border: none;
-    box-shadow: none;
+.down {
+  transform: translateY(10%);
+  border: none;
+  box-shadow: none;
 }
 
 .planName {
@@ -66,9 +66,9 @@
   letter-spacing: 0.2px;
 }
 
-.icons{
-    font-size: 18px;
-    color: #00ff96;
+.icons {
+  font-size: 18px;
+  color: #00ff96;
 }
 
 .tagLine {
@@ -81,4 +81,28 @@
   font-weight: 300;
   line-height: 148%; /* 41.44px */
   letter-spacing: 0.28px;
+}
+
+@media (max-width: 1622px) {
+
+}
+
+@media (max-width: 1350px) {
+
+}
+
+@media (max-width: 1150px) {
+
+}
+
+@media (max-width: 850px) {
+
+  
+
+}
+
+@media (max-width: 750px) {
+ 
+ 
+
 }

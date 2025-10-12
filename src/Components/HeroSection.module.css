@@ -199,7 +199,7 @@
   height: 800px;
   /* transform: rotate(3deg);  */
   /* overflow: hidden; */
-
+  pointer-events: none;
 }
 
 

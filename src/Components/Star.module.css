@@ -13,3 +13,43 @@
 }
 
 
+
+@media (max-width: 1622px) {
+  
+}
+
+@media (max-width: 1350px) {
+  .star{
+    font-size: 30px;
+  }
+
+  
+}
+
+@media (max-width: 1150px) {
+  .parent{
+    padding: 1rem;
+  }
+  
+}
+
+@media (max-width: 850px) {
+  .star{
+    font-size: 24px;
+  }
+  
+}
+
+@media (max-width: 750px) {
+
+}
+
+@media (max-width: 550px) {
+    .star{
+      font-size: 20px;
+    }
+
+    .parent{
+      margin-bottom: 1rem;
+    }
+}

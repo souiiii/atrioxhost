@@ -74,6 +74,13 @@
   width: 100%;
 }
 
+.nameDiv{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+}
+
 .name {
   color: #00ce79;
   font-family: Poppins;
@@ -121,4 +128,93 @@
   color: #cacaca;
   font-weight: 800;
   width: 100%;
+}
+
+
+@media (max-width: 1622px) {
+  
+}
+
+@media (max-width: 1350px) {
+
+
+  .testFeedbackDiv{
+    display: none;
+  
+  }
+
+  .test1, .test2{
+    padding: 0;
+  }
+
+  .test2 .testDiv {
+    transform: translateY(0);
+  }
+
+  .parent{
+    gap: 3rem;
+  }
+
+  .name{
+    font-size: 22px;
+  }
+
+  .testActually{
+    font-size: 20px;
+  }
+
+  .testDiv{
+    padding: 2rem;
+  }
+
+}
+
+@media (max-width: 1150px) {
+  
+}
+
+@media (max-width: 850px) {
+  .parent{
+    gap: 2rem;
+  }
+  
+}
+
+@media (max-width: 750px) {
+  .name{
+    font-size: 20px;
+  }
+
+  .testActually{
+    font-size: 18px;
+    margin-bottom: 3rem;
+  }
+
+  .pos{
+    font-size: 13px;
+  }
+
+  .imgDiv{
+    width: 56px;
+  }
+  
+}
+
+@media (max-width: 550px) {
+ .name{
+    font-size: 18px;
+  }
+
+  .testActually{
+    font-size: 16px;
+    margin-bottom: 2rem;
+  }
+
+  .pos{
+    font-size: 12px;
+  }
+
+  .imgDiv{
+    width: 48px;
+  }
 }

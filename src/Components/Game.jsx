@@ -60,7 +60,7 @@ export default function Game({name, high, desc, features, price}) {
       <button className={`${styles.button}`}>
         <FontAwesomeIcon
           icon={faShoppingCart}
-          style={{ color: "#000", fontSize: "32px" }}
+          className={styles.cartIcon}
         />
         &nbsp; Get your journey Started
       </button>

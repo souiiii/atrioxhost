@@ -12,18 +12,16 @@
   max-width: 1500px;
   margin-block: 150px;
   padding-inline: 2rem;
-
 }
 
-.testimonialCorousel{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    margin-top: 6rem;
-    
+.testimonialCorousel {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: 6rem;
 }
 
 .navButton {
@@ -45,19 +43,17 @@
   align-items: center;
 }
 
-.arrows{
+.arrows {
   font-size: 28px;
   transition: all 0.2s ease;
-
 }
 
 .navButton:hover {
   background: #ffffffd0;
   transform: translateY(-50%) scale(1.2);
-
 }
 
-.navButton:hover .arrows{
+.navButton:hover .arrows {
   font-size: 36px;
   color: #181818;
 }
@@ -70,7 +66,7 @@
   left: -90px;
 }
 
-.prevButton:hover .arrows{
+.prevButton:hover .arrows {
   transform: translateX(-10%);
 }
 
@@ -82,7 +78,7 @@
   right: -90px;
 }
 
-.nextButton:hover .arrows{
+.nextButton:hover .arrows {
   transform: translateX(10%);
 }
 
@@ -92,7 +88,6 @@
   justify-content: center;
   gap: 12px;
   margin-top: -90px;
-
 }
 
 .dot {
@@ -103,6 +98,7 @@
   background: rgba(255, 255, 255, 0.3);
   cursor: pointer;
   transition: all 0.3s ease;
+  padding: 0;
 }
 
 .dot:hover {
@@ -122,11 +118,11 @@
     height: 40px;
     font-size: 16px;
   }
-  
+
   .prevButton {
     left: 10px;
   }
-  
+
   .nextButton {
     right: 10px;
   }
@@ -140,4 +136,76 @@
     width: 10px;
     height: 10px;
   }
+}
+
+@media (max-width: 1622px) {
+  .testimonialCorousel {
+    transform: scale(0.9);
+  }
+}
+
+@media (max-width: 1350px) {
+  .testimonialCorousel {
+    margin-top: 0;
+    transform: scale(1);
+    padding-inline: 3rem;
+  }
+
+  .navButton {
+    top: 99.5%;
+  }
+
+  .arrows {
+    font-size: 24px;
+  }
+
+  .navButton:hover {
+    transform: translateY(-50%) scale(1);
+    background: #ffffffd0;
+  }
+  .dots {
+    margin-top: 48px;
+  }
+
+  .dot {
+    width: 10px;
+    height: 10px;
+  }
+
+  .prevButton {
+    left: 0px;
+  }
+
+  .prevButton:hover {
+    left: 0px;
+  }
+
+  .nextButton {
+    right: 0px;
+  }
+
+  .nextButton:hover {
+    right: 0px;
+  }
+
+  .navButton:hover .arrows {
+    font-size: 24px;
+    color: #181818;
+  }
+
+}
+
+@media (max-width: 1150px) {
+  .parent {
+    margin-block: 75px;
+  }
+}
+
+@media (max-width: 850px) {
+  .testimonialCorousel{
+     padding-inline: 0rem;
+  }
+}
+
+@media (max-width: 750px) {
 }

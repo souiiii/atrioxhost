@@ -27,8 +27,29 @@
   margin-top: 2rem;
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 1622px) {
     .parent{
       padding-inline: 2rem;
     }
+}
+
+@media (max-width: 1350px) {
+  
+}
+
+@media (max-width: 1150px) {
+  
+  .gameGrid{
+    margin-top: 0px;
+  }
+  .parent{
+    margin-block: 75px;
+  }
+}
+
+@media (max-width: 850px) {
+  
+}
+
+@media (max-width: 750px) {
 }

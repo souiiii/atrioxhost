@@ -77,6 +77,12 @@
     font-weight: 600;
 }
 
+.cartIcon
+  { color: "#000";
+    font-size: 32px
+   }
+
+
 .button {
   display: flex;
   justify-content: center;
@@ -96,4 +102,52 @@
   line-height: 125%; /* 45px */
   /* padding: 0 1rem; */
   cursor: pointer;
+}
+
+
+@media (max-width: 1622px) {
+  
+}
+
+@media (max-width: 1350px) {
+  
+}
+
+@media (max-width: 1150px) {
+  
+}
+
+@media (max-width: 850px) {
+  
+}
+
+@media (max-width: 750px) {
+  .gameName{
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 550px) {
+  .gameName{
+    font-size: 24px;
+  }
+
+  .parent{
+    padding: 2rem;
+  }
+
+  .desc{
+    font-size: 16px;
+    line-height: 165%;
+  }
+  
+  .priceDiv{
+    font-size: 20px;
+  }
+  
+  .button, .cartIcon{
+    font-size: 24px;
+  }
+
+
 }
