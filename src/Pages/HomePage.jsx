@@ -27,7 +27,8 @@ export default function HomePage() {
     const isMobile = useIsMobile(700);
   return (
     <div className={styles.parent}>
-      {isMobile ? (
+      
+      {/* {isMobile ? (
         <>
           {" "}
           <LazyBlurShape
@@ -225,16 +226,16 @@ export default function HomePage() {
             }}
           />
         </>
-      )}
+      )} */}
 
       <HeroSection />
       <FeatureSection />
       <ServerSection/>
       <TestimonialSection/>
-      {/* <PlansSection/>
+      <PlansSection/>
       <PingSection/>
       <FaqSection/>
-      <FooterSection/> */}
+      <FooterSection/>
     </div>
   );
 }

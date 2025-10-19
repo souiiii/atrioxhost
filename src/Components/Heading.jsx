@@ -22,7 +22,7 @@ export default function Heading({
         y: "0",
         opacity: 1,
         filter: "blur(0px)",
-        duration: 0.5,
+        duration: 0.3,
         ease: "power1.inOut",
         scrollTrigger: {
           trigger: heading.current,

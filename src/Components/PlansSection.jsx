@@ -22,13 +22,13 @@ export default function PlansSection() {
           {
             y: 0,
             opacity: 1,
-            duration: 0.4,
+            duration: 0.3,
             ease: "power1.inOut",
             stagger: 0.2,
             scrollTrigger: {
               trigger: subHeading.current,
-              start: "top 80%",
-              end: "top 80%",
+              start: "top 90%",
+              end: "top 90%",
               scrub: false,
               markers: false,
               toggleActions: "play none reverse none",

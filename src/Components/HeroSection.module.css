@@ -57,7 +57,7 @@
   content: "";
   z-index: -1;
   position: absolute;
-  background: url("/clouds.png");
+  background: url("/clouds.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;

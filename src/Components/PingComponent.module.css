@@ -51,7 +51,7 @@
   flex-direction: column;
   border-radius: 40px;
   border: 10px solid #202f29;
-  background: url("/pingbg.png") no-repeat;
+  background: url("/pingbg.webp") no-repeat;
 }
 
 .heading2 {

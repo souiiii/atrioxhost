@@ -12,6 +12,9 @@ html {
   width: 100%;
   background-color: var(--bg);
   min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 body{

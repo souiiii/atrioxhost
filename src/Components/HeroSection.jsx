@@ -71,7 +71,7 @@ export default function HeroSection() {
       <div className={styles.container}>
         <div className={styles.container1}>
           <div className={styles.serverDiv}>
-            <img className={styles.server} src="/server-good.png" />
+            <img className={styles.server} src="/server-good.webp" />
           </div>
           <div className={styles.textContainer}>
             <div className={styles.hallow}></div>
@@ -125,7 +125,7 @@ export default function HeroSection() {
         </div>
       </div>
       <div className={styles.dragonContainer}>
-        <img className={styles.dragon} src="/dragonm.png" alt="Dragon Image" />
+        <img className={styles.dragon} src="/dragonm.webp" alt="Dragon Image" />
       </div>
     </div>
   );

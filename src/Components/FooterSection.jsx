@@ -55,7 +55,7 @@ export default function FooterSection() {
         <div className={styles.sec2}>
           <div className={styles.firstPart}>
             <a className={styles.logoDiv}>
-              <img src="/footerlogo.png" className={styles.logo} />
+              <img src="/footerlogo.webp" className={styles.logo} />
             </a>
             <p className={styles.description}>
               At Atrioxhosting, we believe that premium services shouldn't come

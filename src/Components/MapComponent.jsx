@@ -9,7 +9,6 @@ import { ScrollTrigger } from "gsap/all";
 
 gsap.registerPlugin(ScrollTrigger);
 
-
 mapboxgl.accessToken =
   "pk.eyJ1Ijoia3lheWFhcnNoYWhpZCIsImEiOiJjbWR4OTA4NWoyMmsxMmxzYjQxOGRvOHgwIn0.PQu8ua-XA0pXTwLvCTtLvA";
 
@@ -31,8 +30,8 @@ const MapComponent = () => {
           ease: "power1.inOut",
           scrollTrigger: {
             trigger: mp.current,
-            start: "top 80%",
-            end: "top 80%",
+            start: "top 90%",
+            end: "top 90%",
             scrub: false,
             markers: false,
             toggleActions: "play none reverse none",
