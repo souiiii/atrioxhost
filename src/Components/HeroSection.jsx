@@ -71,7 +71,7 @@ export default function HeroSection() {
       <div className={styles.container}>
         <div className={styles.container1}>
           <div className={styles.serverDiv}>
-            <img className={styles.server} src="/server-good.webp" />
+            <img className={styles.server} src="/server2.webp" />
           </div>
           <div className={styles.textContainer}>
             <div className={styles.hallow}></div>

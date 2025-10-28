@@ -171,3 +171,9 @@
     font-size: 18px;
   }
 }
+
+@media (max-width: 420px) {
+  .grid{
+  row-gap: 0rem;
+  }
+}

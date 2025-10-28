@@ -37,3 +37,38 @@
     justify-content: center;
     align-items: center;
 }
+
+
+@media (max-width: 1622px) {
+  
+}
+
+@media (max-width: 1350px) {
+  .plansGrid{
+    flex-direction: column;
+  }
+
+  .desc{
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 1150px) {
+  .desc{
+    font-size: 20px;
+    margin-bottom: 3rem;
+  }
+}
+
+@media (max-width: 850px) {
+  .desc{
+    font-size: 18px;
+  }
+
+}
+
+@media (max-width: 750px) {
+  .desc{
+    font-size: 16px;
+  }
+}

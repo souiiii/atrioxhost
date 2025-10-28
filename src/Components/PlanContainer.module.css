@@ -1,4 +1,5 @@
 .parent {
+  flex: 1 1;
   padding: 3rem;
   display: flex;
   flex-direction: column;
@@ -6,18 +7,18 @@
   justify-content: center;
   width: 100%;
   border-radius: 20px;
-  border: 3px solid rgba(132, 255, 204, 0.6);
   background: #181818;
   background-image: url("/planbg.svg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  box-shadow: 0 -7px 85.5px 28px rgba(0, 206, 121, 0.05);
+  box-shadow: 0 -7px 40px 20px rgba(0, 206, 121, 0.05);
+  border: 3px solid rgba(132, 255, 204, 0.6);
 }
 
 .down {
+  border: 3px solid rgba(155, 155, 155, 0.082);
   transform: translateY(10%);
-  border: none;
   box-shadow: none;
 }
 
@@ -84,11 +85,40 @@
 }
 
 @media (max-width: 1622px) {
-
+  .parent{
+    padding: 2rem;
+  }
 }
 
 @media (max-width: 1350px) {
+  .parent{
+    max-width: 600px;
+  }
 
+  .down{
+    transform: unset;
+  }
+
+  .planName{
+    font-size: 64px;
+  }
+
+  .price{
+    font-size: 48px;
+    /* margin-bottom: 3rem; */
+  }
+
+  .specList{
+    margin-bottom: 2rem;
+  }
+
+  .specs, .icons{
+    font-size: 16px;
+  }
+
+  .tagLine{
+    font-size: 22px;
+  }
 }
 
 @media (max-width: 1150px) {
@@ -97,12 +127,42 @@
 
 @media (max-width: 850px) {
 
-  
+  .tagLine{
+    font-size: 20px;
+  }
 
 }
 
 @media (max-width: 750px) {
  
- 
+ .tagLine{
+    font-size: 18px;
+  }
 
+}
+
+@media (max-width: 550px) {
+
+  .planName{
+    font-size: 48px;
+  }
+
+  .price{
+    font-size: 36px;
+    margin-bottom: 2rem;
+  }
+
+  .specList{
+  
+  }
+
+  .specs, .icons{
+    font-size: 15px;
+  }
+
+
+}
+
+@media (max-width: 420px) {
+  
 }

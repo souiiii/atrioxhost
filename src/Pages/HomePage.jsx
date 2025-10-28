@@ -1,13 +1,13 @@
-import HeroSection from '../Components/HeroSection';
-import styles from './HomePage.module.css';
-import FeatureSection from '../Components/FeatureSection';
-import ServerSection from '../Components/ServerSection';
-import TestimonialSection from '../Components/TestimonialSection';
-import LazyBlurShape from '../Components/LazyBlurShape';
-import PlansSection from '../Components/PlansSection';
-import PingSection from '../Components/PingSection';
-import FaqSection from '../Components/FaqSection';
-import FooterSection from '../Components/FooterSection';
+import HeroSection from "../Components/HeroSection";
+import styles from "./HomePage.module.css";
+import FeatureSection from "../Components/FeatureSection";
+import ServerSection from "../Components/ServerSection";
+import TestimonialSection from "../Components/TestimonialSection";
+import LazyBlurShape from "../Components/LazyBlurShape";
+import PlansSection from "../Components/PlansSection";
+import PingSection from "../Components/PingSection";
+import FaqSection from "../Components/FaqSection";
+import FooterSection from "../Components/FooterSection";
 import { useEffect, useState } from "react";
 
 function useIsMobile(breakpoint = 700) {
@@ -24,10 +24,9 @@ function useIsMobile(breakpoint = 700) {
 }
 
 export default function HomePage() {
-    const isMobile = useIsMobile(700);
+  const isMobile = useIsMobile(700);
   return (
-    <div className={styles.parent}>
-      
+    <div className={`${styles.parent} `}>
       {/* {isMobile ? (
         <>
           {" "}
@@ -230,12 +229,12 @@ export default function HomePage() {
 
       <HeroSection />
       <FeatureSection />
-      <ServerSection/>
-      <TestimonialSection/>
-      <PlansSection/>
-      <PingSection/>
-      <FaqSection/>
-      <FooterSection/>
+      <ServerSection />
+      <TestimonialSection />
+      <PlansSection />
+      {/* <PingSection /> */}
+      {/* <FaqSection />
+      <FooterSection /> */}
     </div>
   );
 }

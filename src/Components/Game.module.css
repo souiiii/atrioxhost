@@ -151,3 +151,14 @@
 
 
 }
+
+@media (max-width: 420px) {
+  .button, .cartIcon{
+    font-size: 18px;
+    padding:0;
+  }
+
+  .cartIcon{
+    display: none;
+  }
+}

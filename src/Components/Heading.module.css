@@ -52,3 +52,9 @@
     font-size: 48px;
   }
 }
+
+@media (max-width: 420px) {
+  .parent{
+    font-size: 40px;
+  }
+}

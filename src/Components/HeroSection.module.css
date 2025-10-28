@@ -512,3 +512,23 @@
 
   }
 }
+
+@media (max-width: 420px) {
+
+ 
+  .butt1{
+    font-size: 18px;
+  }
+
+  .bIcon1{
+    font-size: 17px;
+  }
+
+  .butt2{
+    font-size: 14px;
+  }
+
+  .bIcon2{
+    font-size: 18px;
+  }
+}

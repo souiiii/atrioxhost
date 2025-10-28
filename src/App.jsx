@@ -4,7 +4,7 @@ import './variables.css'
 import SvgBlurDefs from './Components/SvgBlurDefs';
 
 import { useEffect } from 'react';
-import Lenis from '@studio-freight/lenis/types';
+// import Lenis from '@studio-freight/lenis/types';
 
 
 export default function App() {
