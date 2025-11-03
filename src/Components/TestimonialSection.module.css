@@ -10,7 +10,7 @@
   /* min-height: 1000px; */
   /* z-index: 0; */
   max-width: 1500px;
-  margin-block: 150px;
+  margin-block: 100px;
   padding-inline: 2rem;
 }
 
@@ -197,7 +197,7 @@
 
 @media (max-width: 1150px) {
   .parent {
-    margin-block: 75px;
+    margin-block: 100px;
   }
 }
 
@@ -208,4 +208,10 @@
 }
 
 @media (max-width: 750px) {
+}
+
+@media (max-width: 550px) {
+  .parent{
+    margin-block: 75px;
+  }
 }

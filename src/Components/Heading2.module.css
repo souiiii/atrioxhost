@@ -15,6 +15,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 3rem;
+  margin-top: 3rem;
 }
 
 
@@ -27,7 +28,7 @@
 
 @media (max-width: 1350px) {
  .parent{
-
+    margin-top: 0;
     font-size: 90px;
   }
 }
@@ -49,7 +50,7 @@
 @media (max-width: 600px) {
  .parent{
     margin-bottom: 2rem;
-    font-size: 48px;
+    font-size: 44px;
   }
 }
 

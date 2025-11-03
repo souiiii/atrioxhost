@@ -12,31 +12,31 @@ export default function Testimonial({ t }) {
 
   const test = useRef(null);
 
-  useEffect(() => {
-    // scope animations to this component (avoids double-invoke in React 18 dev)
-    const ctx = gsap.context(() => {
-      gsap.fromTo(
-        test.current,
-        { y: 100, opacity: 0 }, // fromVars
-        {
-          y: 0,
-          opacity: 1,
-          duration: 0.3,
-          ease: "power1.inOut",
-          scrollTrigger: {
-            trigger: test.current,
-            start: "top 90%",
-            end: "top 90%",
-            scrub: false,
-            markers: false,
-            toggleActions: "play none reverse none",
-          },
-        } // toVars (put ScrollTrigger here)
-      );
-    }, test);
+  // useEffect(() => {
+  //   // scope animations to this component (avoids double-invoke in React 18 dev)
+  //   const ctx = gsap.context(() => {
+  //     gsap.fromTo(
+  //       test.current,
+  //       { y: 100, opacity: 0 }, // fromVars
+  //       {
+  //         y: 0,
+  //         opacity: 1,
+  //         duration: 0.3,
+  //         ease: "power1.inOut",
+  //         scrollTrigger: {
+  //           trigger: test.current,
+  //           start: "top 90%",
+  //           end: "top 90%",
+  //           scrub: false,
+  //           markers: false,
+  //           toggleActions: "play none reverse none",
+  //         },
+  //       } // toVars (put ScrollTrigger here)
+  //     );
+  //   }, test);
 
-    return () => ctx.revert(); // kill tween + ScrollTrigger on unmount
-  }, []);
+  //   return () => ctx.revert(); // kill tween + ScrollTrigger on unmount
+  // }, []);
 
   return (
     <div ref={test} className={styles.parent}>

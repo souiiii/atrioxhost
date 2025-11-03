@@ -10,7 +10,7 @@
   /* min-height: 1000px; */
   /* z-index: 0; */
   max-width: 1500px;
-  margin-block: 150px;
+  margin-block: 100px;
   /* padding-inline: 2rem; */
 
 }
@@ -43,7 +43,7 @@
     margin-top: 0px;
   }
   .parent{
-    margin-block: 75px;
+    margin-block: 100px;
   }
 }
 
@@ -52,4 +52,15 @@
 }
 
 @media (max-width: 750px) {
+}
+
+@media (max-width: 550px) {
+
+  .gameGrid{
+    row-gap: 2rem;
+    column-gap: 2rem;
+  }
+  .parent{
+    margin-block: 75px;
+  }
 }

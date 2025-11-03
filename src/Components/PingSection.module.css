@@ -10,15 +10,16 @@
   /* min-height: 1000px; */
   /* z-index: 0; */
   max-width: 1500px;
-  margin-block: 150px;
+  margin-block: 100px;
   padding-inline: 2rem;
-
 }
 
 .skylink {
   color: #00ff96 !important;
   -webkit-text-fill-color: #00ff96 !important;
 }
+
+
 
 
 .container{
@@ -32,4 +33,48 @@
   margin-top: 2rem;
   padding: 2rem;
   gap: 6rem;
+}
+
+
+@media (max-width: 1622px) {
+  
+  
+  
+}
+
+@media (max-width: 1350px) {
+  .container{
+    gap: 8rem;
+  }
+}
+
+@media (max-width: 1150px) {
+  .container{
+    padding: 0;
+    margin-top: 0;
+    gap: 6rem;
+  }
+  
+}
+
+@media (max-width: 850px) {
+  
+}
+
+@media (max-width: 750px) {
+  
+}
+
+@media (max-width: 550px) {
+  .parent{
+    margin-block: 75px;
+  }
+
+  .container{
+    gap: 4rem;
+  }
+}
+
+@media (max-width: 420px) {
+  
 }

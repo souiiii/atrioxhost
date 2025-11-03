@@ -12,31 +12,31 @@ export default function Game({name, high, desc, features, price}) {
 
   const game= useRef(null);
   
-    useEffect(() => {
-      // scope animations to this component (avoids double-invoke in React 18 dev)
-      const ctx = gsap.context(() => {
-        gsap.fromTo(
-          game.current,
-          { y: 100, opacity: 0 }, // fromVars
-          {
-            y: 0,
-            opacity: 1,
-            duration: 0.3,
-            ease: "power1.inOut",
-            scrollTrigger: {
-              trigger: game.current,
-              start: "top 90%",
-              end: "top 90%",
-              scrub: false,
-              markers: false,
-              toggleActions: "play none reverse none",
-            },
-          } // toVars (put ScrollTrigger here)
-        );
-      }, game);
+    // useEffect(() => {
+    //   // scope animations to this component (avoids double-invoke in React 18 dev)
+    //   const ctx = gsap.context(() => {
+    //     gsap.fromTo(
+    //       game.current,
+    //       { y: 100, opacity: 0 }, // fromVars
+    //       {
+    //         y: 0,
+    //         opacity: 1,
+    //         duration: 0.3,
+    //         ease: "power1.inOut",
+    //         scrollTrigger: {
+    //           trigger: game.current,
+    //           start: "top 90%",
+    //           end: "top 90%",
+    //           scrub: false,
+    //           markers: false,
+    //           toggleActions: "play none reverse none",
+    //         },
+    //       } // toVars (put ScrollTrigger here)
+    //     );
+    //   }, game);
   
-      return () => ctx.revert(); // kill tween + ScrollTrigger on unmount
-    }, []);
+    //   return () => ctx.revert(); // kill tween + ScrollTrigger on unmount
+    // }, []);
   return (
     <div ref={game} className={styles.parent}>
       <h1 className={styles.gameName}>{name}</h1>

@@ -37,6 +37,7 @@
   background: #181818;
   padding: 2.5rem;
   box-shadow: -10px -10px 15px #0000001e;
+  border: 3px solid rgba(155, 155, 155, 0.062);
 }
 
 .testActually {
@@ -44,7 +45,7 @@
   font-family: Poppins;
   font-size: 22px;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 177%;
   letter-spacing: 0.24px;
   margin-bottom: 4rem;
@@ -74,7 +75,7 @@
   width: 100%;
 }
 
-.nameDiv{
+.nameDiv {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -130,20 +131,16 @@
   width: 100%;
 }
 
-
 @media (max-width: 1622px) {
-  
 }
 
 @media (max-width: 1350px) {
-
-
-  .testFeedbackDiv{
+  .testFeedbackDiv {
     display: none;
-  
   }
 
-  .test1, .test2{
+  .test1,
+  .test2 {
     padding: 0;
   }
 
@@ -151,70 +148,67 @@
     transform: translateY(0);
   }
 
-  .parent{
+  .parent {
     gap: 3rem;
   }
 
-  .name{
+  .name {
     font-size: 22px;
   }
 
-  .testActually{
+  .testActually {
     font-size: 20px;
   }
 
-  .testDiv{
+  .testDiv {
     padding: 2rem;
   }
-
 }
 
 @media (max-width: 1150px) {
-  
 }
 
 @media (max-width: 850px) {
-  .parent{
+  .parent {
     gap: 2rem;
   }
-  
 }
 
 @media (max-width: 750px) {
-  .name{
+  .name {
     font-size: 20px;
   }
 
-  .testActually{
+  .testActually {
     font-size: 18px;
     margin-bottom: 3rem;
   }
 
-  .pos{
+  .pos {
     font-size: 13px;
   }
 
-  .imgDiv{
+  .imgDiv {
     width: 56px;
   }
-  
 }
 
 @media (max-width: 550px) {
- .name{
+  .name {
     font-size: 18px;
   }
 
-  .testActually{
+  .testActually {
     font-size: 16px;
     margin-bottom: 2rem;
+    line-height: 165%;
   }
 
-  .pos{
+  .pos {
     font-size: 12px;
   }
 
-  .imgDiv{
+  .imgDiv {
     width: 48px;
   }
 }

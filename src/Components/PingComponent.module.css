@@ -14,7 +14,6 @@
   justify-content: start;
 }
 
-
 .heading {
   color: #00ff96;
   font-family: Poppins;
@@ -32,13 +31,14 @@
   font-family: Poppins;
   font-size: 28px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 163%;
   letter-spacing: 0.32px;
 }
 
 .skylink {
   color: #00ff96;
+  font-weight: 700;
 }
 
 .pingDiv {
@@ -72,20 +72,21 @@
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .pingMeter {
   width: 100%;
   border: 4px solid #02b06b;
   background: #222;
-  height: 60px;
+  height: 50px;
 }
 
 .pingMeterProgress {
   height: 100%;
   width: 70%;
   background-color: #02b06b;
+  transition: all 0.1s linear;
 }
 
 .pingMeterLabels {
@@ -122,16 +123,328 @@
 
 .pingResult {
   color: #00ce79;
-  font-family: Staatliches;
+  display: flex;
+  min-height: 120px;
+  align-items: center;
+  justify-content: center;
+  font-family: "Google Sans Code";
   font-size: 90px;
   font-style: normal;
-  font-weight: 400;
-  line-height: 99%; /* 99px */
+  font-weight: 700;
+  line-height: 65px;
   letter-spacing: 1px;
+}
+
+.pinging {
+  font-size: 84px;
+  font-family: "Google Sans Code";
+  letter-spacing: 0px;
+  text-transform: uppercase;
+  /* line-height: 99%; 99px */
+  font-weight: 900;
+}
+
+.pingDivv {
+  display: flex;
+  align-items: end;
+  justify-content: center;
 }
 
 .ms {
   line-height: 99%;
   letter-spacing: 0.24px;
   font-size: 20px;
+}
+
+@media (max-width: 1622px) {
+  .heading {
+    font-size: 64px;
+  }
+
+  .desc {
+    font-size: 24px;
+  }
+
+  .heading2 {
+    font-size: 48px;
+  }
+
+  .pingMeter {
+    height: 48px;
+  }
+
+  .pingResult {
+    font-size: 84px;
+  }
+
+  .butt {
+    font-size: 20px;
+  }
+
+  .ms {
+    font-size: 18px;
+  }
+
+  .pinging {
+    font-size: 72px;
+  }
+}
+
+@media (max-width: 1350px) {
+  .parent {
+    flex-direction: column;
+  }
+
+  .textDiv {
+    width: 100%;
+    order: 2;
+  }
+
+  .pingDiv {
+    width: 100%;
+  }
+
+  .pingResult {
+    font-size: 72px;
+  }
+
+  .heading {
+    font-size: 56px;
+  }
+
+  .heading2 {
+    margin-bottom: 12px;
+  }
+
+  .desc {
+    font-size: 24px;
+    line-height: 140%;
+  }
+
+  .heading {
+    max-width: 900px;
+  }
+
+  .desc {
+    max-width: 800px;
+  }
+
+  .pinging {
+    font-size: 64px;
+  }
+
+  .butt {
+    font-size: 18px;
+    margin-bottom: 0;
+  }
+
+  .ms {
+    font-size: 16px;
+    position: relative;
+    top: -5px;
+  }
+
+  .pings {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1150px) {
+  .pingDiv {
+    padding: 1rem;
+  }
+
+  .pingResult {
+    font-size: 64px;
+  }
+
+  .textDiv {
+    align-items: start;
+    justify-content: center;
+    max-width: 800px;
+  }
+
+  .heading {
+    font-size: 48px;
+  }
+
+  .heading2 {
+    margin-bottom: 12px;
+  }
+
+  .desc {
+    font-size: 20px;
+    line-height: 140%;
+  }
+
+  .pinging {
+    font-size: 56px;
+  }
+
+  .butt {
+    font-size: 16px;
+  }
+
+  .pings {
+    font-size: 14px;
+  }
+
+  .ms {
+    font-size: 14px;
+    position: relative;
+    top: -8px;
+  }
+
+  .pingDiv {
+    padding-bottom: 0;
+  }
+}
+
+@media (max-width: 850px) {
+}
+
+@media (max-width: 750px) {
+  .parent {
+    gap: 2rem;
+  }
+
+  .pingResult {
+    font-size: 56px;
+  }
+
+  .heading {
+    font-size: 40px;
+    line-height: 72%;
+  }
+
+  .heading2 {
+    margin-bottom: 12px;
+    font-size: 32px;
+  }
+
+  .desc {
+    font-size: 18px;
+  }
+
+  .pinging {
+    font-size: 56px;
+  }
+
+  .butt {
+    font-size: 14px;
+  }
+
+  .pings {
+    font-size: 12px;
+  }
+
+  .pingDiv {
+    border-width: 8px;
+  }
+
+  .ms {
+    font-size: 12px;
+    top: -12px;
+  }
+}
+
+@media (max-width: 620px) {
+  .heading {
+    font-size: 32px;
+  }
+
+  .heading2 {
+    font-size: 30px;
+  }
+
+  .pingMeterDiv {
+    width: 90%;
+  }
+
+  .pingMeter {
+    height: 40px;
+  }
+
+  .pinging {
+    font-size: 48px;
+  }
+
+  .pingResult {
+    font-size: 54px;
+    min-height: 100px;
+  }
+  .pingDiv {
+    padding-top: 1rem;
+  }
+
+  .ms {
+    top: -12px;
+  }
+}
+
+@media (max-width: 550px) {
+  .pingDiv {
+    border-width: 6px;
+  }
+
+  .heading {
+    font-size: 30px;
+  }
+
+  .desc {
+    font-size: 16px;
+  }
+
+  .heading2 {
+    font-size: 28px;
+  }
+
+  .pingResult {
+    font-size: 48px;
+  }
+
+  .pinging {
+    font-size: 40px;
+  }
+
+  .pingMeter {
+    height: 30px;
+  }
+
+  .pings {
+    font-size: 10px;
+  }
+
+  .ms {
+    top: -15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .heading {
+    font-size: 24px;
+  }
+
+  .pingResult {
+    font-size: 40px;
+    min-height: 70px;
+  }
+
+  .pinging {
+    font-size: 32px;
+  }
+  .heading {
+    line-height: 25px;
+    margin-bottom: 1rem;
+  }
+
+  .ms {
+    top: -17px;
+  }
+}
+
+@media (max-width: 400px) {
+  .heading2 {
+    font-size: 24px;
+  }
 }

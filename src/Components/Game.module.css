@@ -9,7 +9,8 @@
   width: 100%;
   border-radius: 20px;
   background: #181818;
-  background-image: url('/gamebg.svg');
+  background-image: url("/gamebg.svg");
+  border: 3px solid rgba(155, 155, 155, 0.062);
   background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
@@ -27,19 +28,19 @@
 }
 
 .desc {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.7);
   font-family: Poppins;
   font-size: 18px;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 183%;
   letter-spacing: 0.2px;
   margin-bottom: 1rem;
 }
 
-.high{
-    font-weight: 800;
-    color: var(--text);
+.high {
+  font-weight: 800;
+  color: var(--text);
 }
 
 .featureDiv {
@@ -62,7 +63,7 @@
 }
 
 .priceDiv {
-    color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.8);
 
   font-family: Poppins;
   font-size: 22px;
@@ -72,16 +73,15 @@
   margin-bottom: 2rem;
 }
 
-.price{
-    color: var(--text);
-    font-weight: 600;
+.price {
+  color: var(--text);
+  font-weight: 600;
 }
 
-.cartIcon
-  { color: "#000";
-    font-size: 32px
-   }
-
+.cartIcon {
+  color: "#000";
+  font-size: 32px;
+}
 
 .button {
   display: flex;
@@ -104,61 +104,65 @@
   cursor: pointer;
 }
 
-
 @media (max-width: 1622px) {
-  
 }
 
 @media (max-width: 1350px) {
-  
 }
 
 @media (max-width: 1150px) {
-  
 }
 
 @media (max-width: 850px) {
-  
 }
 
 @media (max-width: 750px) {
-  .gameName{
+  .gameName {
     font-size: 30px;
   }
 }
 
 @media (max-width: 550px) {
-  .gameName{
-    font-size: 24px;
+  .gameName {
+    font-size: 22px;
+    margin-bottom: 1.5rem;
   }
 
-  .parent{
+  .featureDiv {
+    margin-bottom: 2rem;
+  }
+
+  .parent {
     padding: 2rem;
   }
 
-  .desc{
+  .desc {
+    font-size: 15px;
+    line-height: 157%;
+  }
+
+  .priceDiv {
+    font-size: 18px;
+  }
+
+  .button,
+  .cartIcon {
+    font-size: 22px;
+  }
+
+  .feature {
     font-size: 16px;
-    line-height: 165%;
   }
-  
-  .priceDiv{
-    font-size: 20px;
-  }
-  
-  .button, .cartIcon{
-    font-size: 24px;
-  }
-
-
 }
 
 @media (max-width: 420px) {
-  .button, .cartIcon{
+  .button,
+  .cartIcon {
     font-size: 18px;
-    padding:0;
+    padding: 0;
   }
 
-  .cartIcon{
+  .cartIcon {
     display: none;
   }
 }

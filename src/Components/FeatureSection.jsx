@@ -21,73 +21,73 @@ export default function FeatureSection() {
   const desc = useRef(null);
   const dragon = useRef(null);
 
-  useEffect(function () {
-    setTimeout(function hell() {
-      const myText = new SplitText(desc.current, { type: "words" });
-      gsap.fromTo(
-        [box1.current, box2.current, box3.current, box4.current],
-        { y: "120px", opacity: 0, 
-          // filter: "blur(10px)" 
-        },
-        {
-          y: "0",
-          opacity: 1,
-          // filter: "blur(0px)",
-          duration: 0.3,
-          stagger: 0.08,
-          ease: "power1.inOut",
-          scrollTrigger: {
-            trigger: box.current,
-            start: "top 90%",
-            end: "top 90%",
-            scrub: false,
-            toggleActions: "play none reverse none",
-          },
-        }
-      );
-      gsap.fromTo(
-        dragon.current,
-        { opacity: 0 },
-        {
-          opacity: 1,
-          duration: 0.2,
-          ease: "power1.inOut",
-          scrollTrigger: {
-            trigger: dragon.current,
-            start: "top 80%",
-            end: "top 80%",
-            scrub: false,
-            markers: false,
-            toggleActions: "play none reverse none",
-          },
-        }
-      );
+  // useEffect(function () {
+  //   setTimeout(function hell() {
+  //     const myText = new SplitText(desc.current, { type: "words" });
+  //     gsap.fromTo(
+  //       [box1.current, box2.current, box3.current, box4.current],
+  //       { y: "120px", opacity: 0, 
+  //         // filter: "blur(10px)" 
+  //       },
+  //       {
+  //         y: "0",
+  //         opacity: 1,
+  //         // filter: "blur(0px)",
+  //         duration: 0.3,
+  //         stagger: 0.08,
+  //         ease: "power1.inOut",
+  //         scrollTrigger: {
+  //           trigger: box.current,
+  //           start: "top 90%",
+  //           end: "top 90%",
+  //           scrub: false,
+  //           toggleActions: "play none reverse none",
+  //         },
+  //       }
+  //     );
+  //     gsap.fromTo(
+  //       dragon.current,
+  //       { opacity: 0 },
+  //       {
+  //         opacity: 1,
+  //         duration: 0.2,
+  //         ease: "power1.inOut",
+  //         scrollTrigger: {
+  //           trigger: dragon.current,
+  //           start: "top 80%",
+  //           end: "top 80%",
+  //           scrub: false,
+  //           markers: false,
+  //           toggleActions: "play none reverse none",
+  //         },
+  //       }
+  //     );
 
-      gsap.fromTo(
-        myText.words,
-        { y: 60, filter: "blur(5px)", opacity: 0.01 },
+  //     gsap.fromTo(
+  //       myText.words,
+  //       { y: 60, filter: "blur(5px)", opacity: 0.01 },
 
-        {
-          opacity: 1,
-          filter: "blur(0px)",
-          duration: 0.2,
-          stagger: 0.04,
-          y: 0,
-          ease: "power1.inOut",
-          scrollTrigger: {
-            trigger: desc.current,
-            start: "top 95%",
-            end: "top 95%",
-            scrub: false,
-            markers: false,
-            toggleActions: "play none reverse none",
-          },
-        }
-      );
-    }, 100);
+  //       {
+  //         opacity: 1,
+  //         filter: "blur(0px)",
+  //         duration: 0.2,
+  //         stagger: 0.04,
+  //         y: 0,
+  //         ease: "power1.inOut",
+  //         scrollTrigger: {
+  //           trigger: desc.current,
+  //           start: "top 95%",
+  //           end: "top 95%",
+  //           scrub: false,
+  //           markers: false,
+  //           toggleActions: "play none reverse none",
+  //         },
+  //       }
+  //     );
+  //   }, 100);
 
-    ScrollTrigger.refresh();
-  }, []);
+  //   ScrollTrigger.refresh();
+  // }, []);
 
   return (
     <div className={styles.parent}>

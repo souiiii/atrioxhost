@@ -232,9 +232,9 @@ export default function HomePage() {
       <ServerSection />
       <TestimonialSection />
       <PlansSection />
-      {/* <PingSection /> */}
-      {/* <FaqSection />
-      <FooterSection /> */}
+      <PingSection />
+      {/* <FaqSection /> */}
+      {/* <FooterSection /> */}
     </div>
   );
 }
